@@ -9,7 +9,7 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 # 소스 코드 복사
-RUN echo "After copying files:" && ls -al
+RUN echo "After copying files:" && ls -al && echo "Rebuild to invalidate cache"
 COPY .next ./.next
 COPY node_modules ./node_modules
 COPY . .
