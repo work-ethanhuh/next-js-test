@@ -9,11 +9,12 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 # 소스 코드 복사
-COPY .next ./.next
 COPY . .
 
 # 빌드 명령 실행
 RUN npm run build
 
+EXPOSE 3000
+
 # Next.js 앱 실행
-CMD ["npm", "start"]
+ENTRYPOINT [ "npm", "run", "start" ]
