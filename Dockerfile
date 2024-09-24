@@ -11,7 +11,6 @@ RUN npm install --production
 # 소스 코드 복사
 COPY /app/.next ./.next
 COPY /app/node_modules ./node_modules
-COPY /app/package.json ./package.json
 COPY . .
 
 # 빌드 명령 실행
