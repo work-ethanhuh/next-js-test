@@ -10,4 +10,4 @@ services:
       - .:/app
     environment:
       - NODE_ENV=production
-    command: "yarn start"
+    command: "npm start"
