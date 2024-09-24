@@ -8,13 +8,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 
-# Add a build argument to invalidate the cache
-ARG CACHE_BUSTER=1
-
 # 소스 코드 복사
-RUN echo "After copying files:" && ls -al && echo "Rebuild to invalidate cache $CACHE_BUSTER"
-COPY .next ./.next
-COPY node_modules ./node_modules
 COPY . .
 
 # 빌드 명령 실행
