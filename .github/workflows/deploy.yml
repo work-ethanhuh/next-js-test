@@ -25,7 +25,7 @@ jobs:
             cd /web-test
             if [ ! -d ".git" ]; then
               git init
-              git remote add origin https://$PAT_TOKEN@github.com/work-ethanhuh/next-js-test.git
+              git remote add origin https://work-ethanhuh:$PAT_TOKEN@github.com/work-ethanhuh/next-js-test.git
             fi
             git pull origin main
             docker-compose down
