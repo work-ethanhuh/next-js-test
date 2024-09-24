@@ -16,26 +16,16 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: Setup SSH for GitHub
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          eval $(ssh-agent -s)
-          ssh-add ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-
       - name: Copy files via SSH
         env:
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no root@125.133.75.11 <<EOF
             cd /web-test
             if [ ! -d ".git" ]; then
               git init
-              git remote add origin git@github.com:username/repository.git
+              git remote add origin https://$PAT_TOKEN@github.com/username/repository.git
             fi
             git pull origin main
             docker-compose down
