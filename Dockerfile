@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # 빌드 명령 실행
-RUN npm build
+RUN npm run build
 
 # Next.js 앱 실행
 CMD ["npm", "start"]
