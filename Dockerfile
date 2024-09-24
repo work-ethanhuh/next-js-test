@@ -9,8 +9,8 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 # 소스 코드 복사
-COPY /app/.next ./.next
-COPY /app/node_modules ./node_modules
+COPY /.next ./.next
+COPY /node_modules ./node_modules
 COPY . .
 
 # 빌드 명령 실행
