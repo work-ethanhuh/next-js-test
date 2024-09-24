@@ -9,6 +9,7 @@ COPY package.json package-lock.json ./
 RUN npm install -g next react react-dom
 
 # 소스 코드 복사
+COPY /node_modules ./node_modules
 COPY . .
 
 # 빌드 명령 실행
