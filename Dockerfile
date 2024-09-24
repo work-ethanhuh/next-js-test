@@ -8,7 +8,7 @@ ADD ./ /app
 
 # 종속성 설치
 COPY package.json package-lock.json ./
-RUN npm install -g pm2
+RUN npm install
 
 # 소스 코드 복사
 COPY . .
