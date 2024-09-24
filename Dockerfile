@@ -6,7 +6,7 @@ WORKDIR /app
 
 # 종속성 설치
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm install -g next
 
 # 소스 코드 복사
 COPY . .
@@ -17,4 +17,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Next.js 앱 실행
-ENTRYPOINT [ "npm", "run", "start" ]
+CMD ["npm", "start"]
