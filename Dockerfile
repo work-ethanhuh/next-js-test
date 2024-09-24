@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # 종속성 설치
-COPY package.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 # 소스 코드 복사
