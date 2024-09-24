@@ -25,7 +25,7 @@ jobs:
             cd /web-test
             if [ ! -d ".git" ]; then
               git init
-              git remote set-url origin https://htm-FX707ZV4:$PAT_TOKEN@github.com/work-ethanhuh/next-js-test.git
+              git remote set-url origin https://htm-FX707ZV4@github.com/work-ethanhuh/next-js-test.git
             fi
             git pull origin main
             docker-compose down
