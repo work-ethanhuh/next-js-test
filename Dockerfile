@@ -6,7 +6,7 @@ WORKDIR /app
 
 # 종속성 설치
 COPY package.json package-lock.json ./
-RUN npm install -g next react react-dom
+RUN npm install next react react-dom
 
 # 소스 코드 복사
 COPY . .
