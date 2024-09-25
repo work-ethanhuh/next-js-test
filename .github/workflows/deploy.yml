@@ -38,7 +38,6 @@ jobs:
             fi
             git pull origin main
             docker-compose down
-            # Add a unique CACHE_BUSTER value to invalidate Docker cache
-            CACHE_BUSTER=$(date +%s) docker-compose build --no-cache --build-arg CACHE_BUSTER=$CACHE_BUSTER
+            docker-compose build --no-cache
             docker-compose up -d
           EOF
