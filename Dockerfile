@@ -2,11 +2,12 @@
 FROM node:18-alpine
 
 # 작업 디렉토리 설정
+RUN mkdir /app
 WORKDIR /app
 
 # 종속성 설치
-COPY package.json package-lock.json ./
-RUN npm install next react react-dom
+COPY package*.json ./
+RUN npm install
 
 # 소스 코드 복사
 COPY . .

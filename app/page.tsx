@@ -1,10 +1,29 @@
+"use client";
+
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import React, { useState } from 'react';
+import Modal from './modal';
+import Dialog from "./dialog";
+import { useRouter } from 'next/navigation';
+import Route_1 from "./page_1/page";
+import Route_2 from "./page_2/page";
 
-export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+
+const Home:React.FC = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [switchMain, setMain] = useState('main')
+  const router = useRouter();
+  
+  function switchPage() {
+    if(switchMain.match('1')){
+      return Route_1();
+    } else if(switchMain.match('2')){
+      return Route_2();
+    } else {
+      return (<div>
         <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"
@@ -13,13 +32,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
+              
         <div className={styles.ctas}>
           <a
             className={styles.primary}
@@ -45,7 +58,34 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+      </div>);
+    }
+  }
+
+  return (
+    <div className={styles.page}>
+      <div style={{
+        // minHeight:'50px', 
+        backgroundColor: 'lightblue', display: 'flex', gap: '30px', marginBottom: '20px'}}>
+        <button onClick={() => setIsDialogOpen(true)}>
+          <span>버튼1</span>
+        </button>        
+        <button onClick={() => setIsModalOpen(true)}>
+          <span>버튼2</span>
+        </button>
+      </div>
+      <main className={styles.main}>
+        {switchPage()}
       </main>
+      <div style={{position:'absolute'}}>
+        <Dialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} title="다이얼로그 제목">
+            <p>여기에 내용을 추가하세요.</p>
+        </Dialog>
+      </div>
+      <div style={{position:'absolute'}}>
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}/>
+      </div>
+      
       <footer className={styles.footer}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -89,7 +129,24 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        
       </footer>
+      <div style={{
+        // minHeight:'50px', 
+        backgroundColor: 'red', display: 'flex', gap: '30px'}}>
+        <button onClick={() => setMain('1')}>
+          <span>1 폐이지</span>
+        </button>
+        <button onClick={() => setMain('2')}>
+          <span>2 페이지</span>
+        </button>
+        <button onClick={() => setMain('3')}>
+          <span>메인</span>
+        </button>
+      </div>
     </div>
+    
   );
-}
+};
+
+export default Home;
