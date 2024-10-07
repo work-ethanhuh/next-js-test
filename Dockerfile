@@ -13,6 +13,7 @@ RUN npm install
 COPY /app ./app
 COPY ../next-env.d.ts ./
 COPY ../next.config.mjs ./
+COPY ../ts*.json ./
 
 # 빌드 명령 실행
 RUN npm run build
