@@ -10,7 +10,9 @@ COPY package*.json ./
 RUN npm install
 
 # 소스 코드 복사
-COPY . .
+COPY /app ./app
+COPY next-env.d.ts ./
+COPY next.config.mjs ./
 
 # 빌드 명령 실행
 RUN npm run build
