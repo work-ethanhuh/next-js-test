@@ -6,7 +6,6 @@ import styles from "./page.module.css";
 import React, { useState } from 'react';
 import Modal from './modal';
 import Dialog from "./dialog";
-import { useRouter } from 'next/navigation';
 import Route_1 from "./page_1/page";
 import Route_2 from "./page_2/page";
 
@@ -15,8 +14,7 @@ const Home:React.FC = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [switchMain, setMain] = useState('main')
-  const router = useRouter();
-  
+    
   function switchPage() {
     if(switchMain.match('1')){
       return Route_1();
