@@ -1,12 +1,20 @@
-import React, {useState} from "react";
+import React, { FC, useState } from "react";
 
 import { headerNavigation } from "../constants/constVariable";
 
-const Header = () => {
-    const [show, setShow] = useState(false);
+interface Props {
+    onPathData: (path: string) => void;
+}
 
-    const toggleMenu = () => {
-        setShow((prevShow) => !prevShow);
+const Header: FC<Props> = ({ onPathData }) => {
+    // const [show, setShow] = useState(false);
+
+    // const toggleMenu = () => {
+    //     setShow((prevShow) => !prevShow);
+    // }
+
+    const pathData = (url : string) => {
+        onPathData(url);
     }
 
     return (
@@ -14,33 +22,22 @@ const Header = () => {
             <div className="header__inner">
                 <div className="header__logo">
                     <h1>
-                        <a href="#">resume<em>powered by next.js</em></a>
+                        <span onClick={() => pathData('/')} style={{ cursor: 'pointer'}}>resume<em>powered by next.js</em></span>
                     </h1>
                 </div>
                 <nav 
-                    className={`header__nav ${show ? "show" : ""}`} 
+                    className={`header__nav false`} 
                     role="navigation" 
                     aria-label="메인 메뉴"
                 >
                     <ul>
                         {headerNavigation.map((nav, key) => (
-                            <li key={key}>
-                                <a href={nav.url}>{nav.title}</a>
+                            <li key={key} style={{ marginRight: '20px' }}>
+                                <span onClick={() => pathData(nav.url)} style={{ cursor: 'pointer'}}>{nav.title}</span>
                             </li>
                         ))}
                     </ul>
                 </nav>
-                <div 
-                    className="header__nav__mobile" 
-                    id="headerToggle" 
-                    aria-controls="primary-menu" 
-                    aria-expanded={show ? "true" : "false"} 
-                    role="button"
-                    tabIndex={0}
-                    onClick={toggleMenu}
-                >
-                    <span></span>
-                </div>
             </div>
         </header>
     )

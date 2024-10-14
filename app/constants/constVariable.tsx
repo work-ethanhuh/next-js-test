@@ -1,15 +1,15 @@
 export const headerNavigation = [
     {
         title: "이력사항",
-        url: "#history"
+        url: "history"
     },
     {
         title: "경력기술서",
-        url: "#career"
+        url: "career"
     },
     {
         title: "포트폴리오",
-        url: "#portfolio"
+        url: "portfolio"
     },
 ];
 
