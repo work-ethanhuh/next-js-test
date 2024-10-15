@@ -19,7 +19,7 @@ const Site = () => {
                             </div>
                             <h3 className="title">
                                 {history.title.map((title, idx) => (
-                                    <p>{title}</p>
+                                    <p key={idx}>{title}</p>
                                 ))}
                             </h3>
                             <div className="btn">
@@ -30,7 +30,7 @@ const Site = () => {
                                 <span>Tech Stack : </span>
                                 {
                                     history.info.map((info, idx) => (
-                                        <span>{info}</span>
+                                        <span key={idx}>{info}</span>
                                     ))
                                 }
                             </div>

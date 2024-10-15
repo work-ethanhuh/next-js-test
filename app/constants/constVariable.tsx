@@ -175,8 +175,24 @@ export const historyText = [
         view: "",
         info: [
             "C++",
-            "OpenCV",
-            "Google API",
+            "C",
+            "MFC",
+            "Flash",
+            "XML",
+        ],
+    },
+    {
+        yearmonth: "2012.08 - 2014.04",
+        text: ["기산전자", "인식 개발팀", "주임연구원"],
+        title: [
+            "- Newton / Newton Plus / K-500 내의 인식 알고리즘 및 해당 국가 프로그램 개발",
+            "- 해외 중앙은행 기기 입찰 성능 시현",
+            "- 바이어 엔지니어 교육( 담당지 : 파리, 벨기에, 쿠웨이트 )",
+        ],
+        code: "",
+        view: "",
+        info: [
+            "C",
         ],
     },
 ];
