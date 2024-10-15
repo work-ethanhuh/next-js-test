@@ -72,6 +72,70 @@
                     top: 200px;
                 }
             }
+            &.s5 {
+                background-color: var(--subBg100);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s6 {
+                background-color: var(--subBg200);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s7 {
+                background-color: var(--subBg300);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s8 {
+                background-color: var(--subBg400);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s9 {
+                background-color: var(--subBg100);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s10 {
+                background-color: var(--subBg200);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s11 {
+                background-color: var(--subBg300);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
+            &.s12 {
+                background-color: var(--subBg400);
+                top: 240px;
+
+                @media (max-width: 800px){ 
+                    top: 200px;
+                }
+            }
             .num {
                 font-size: 5vw;
                 line-height: 1;
@@ -93,13 +157,13 @@
 
                 > div {
                     font-size: 3vw;
-                    line-height: 1;
+                    // line-height: 1;
                     font-weight: 900;
                     text-transform: uppercase;
-                    text-decoration: underline;
+                    // text-decoration: underline;
                     font-family: var(--mainEng-font);
 
-                    @media (max-width: 800px){ 
+                    @media (max-width: 100%){ 
                         font-size: 26px;
                     }
                 }
