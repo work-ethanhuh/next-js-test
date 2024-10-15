@@ -146,7 +146,7 @@
                 top: 1vw;
 
                 @media (max-width: 800px){ 
-                    font-size: 80px;
+                    font-size: clamp(40px, 10vw, 80px);
                     left: 20px;
                     top: 20px;
                 }
@@ -164,13 +164,17 @@
                     font-family: var(--mainEng-font);
 
                     @media (max-width: 100%){ 
-                        font-size: 26px;
+                        font-size: clamp(10px, 4vw, 26px);
                     }
                 }
             }
             .title {
+                text-align: left;
                 font-family: var(--mainKor-font);
                 margin-bottom: 1rem;
+                @media (max-width: 100%){ 
+                    font-size: clamp(5px, 3vw, 20px);
+                }
             }
             .btn {
                 a {
@@ -198,6 +202,7 @@
                 justify-content: space-between;
 
                 @media (max-width: 800px){ 
+                    
                     flex-direction: column;
                     width: 90%;
                     margin-left: 5%;
@@ -206,7 +211,7 @@
 
                 span {
                     font-family: var(--mainKor-font);
-                    font-size: 12px;
+                    font-size: clamp(5px, 3vw, 12px);
                     padding: 3px 0;
                     text-transform: uppercase;
                 }

@@ -18,8 +18,8 @@ export const historyText = [
         yearmonth: "2024.05 - 현재",
         text: ["키인즈", "서비스 개발팀", "선임연구원"],
         title: [
-            "- U+ 화물잇고-차주앱 (Flutter - iOS/Android 앱) : 2024.05 ~ 2024.09",
-            "- 미래엔 관리자 웹 (NextJS) : 2024.10 ~ 현재",
+            "- U+ 화물잇고-차주앱 (Flutter - iOS/Android 앱) : 5월 ~ 9월",
+            "- 미래엔 관리자 웹 (NextJS) : 10월 ~ 현재",
         ],
         code: "",
         view: "",

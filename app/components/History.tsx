@@ -17,11 +17,9 @@ const Site = () => {
                                 <div>{history.text[0]}</div>
                                 <div><h4>{history.text[1]} / {history.text[2]}</h4></div>
                             </div>
-                            <h3 className="title">
-                                {history.title.map((title, idx) => (
-                                    <p key={idx}>{title}</p>
+                            {history.title.map((title, idx) => (
+                                    <div className="title" key={idx} >{title}</div>
                                 ))}
-                            </h3>
                             <div className="btn">
                                 {/* <a href={history.code}>code</a> */}
                                 <span>{history.view}</span>
