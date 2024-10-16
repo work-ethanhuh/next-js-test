@@ -152,18 +152,19 @@
                 }
             }
             .text {
+                font-size: 4vw;
                 text-align: center;
                 margin-bottom: 1rem;
 
                 > div {
                     font-weight: 900;
-                    text-transform: uppercase;
                     font-family: var(--mainEng-font);
 
-                    @media (min-width: 800px){ 
-                        font-size: clamp(40px, 3vw, 60px);
+                    @media (max-width: 800px){ 
+                        font-size: clamp(40px, 5vw, 70px);
                     }
                 }
+                
             }
             .title {
                 font-family: var(--mainKor-font);
@@ -171,7 +172,7 @@
                 margin-left: 2rem;
                 margin-right: 1rem;
                 @media (max-width: 800px){ 
-                    font-size: clamp(10px, 2vw, 30px);
+                    font-size: clamp(13px, 2vw, 30px);
                 }
             }
             .btn {
@@ -197,7 +198,7 @@
                 border-top: 1px solid var(--black);
                 border-bottom: 1px solid var(--black);
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
 
                 @media (max-width: 800px){ 
                     flex-direction: column;

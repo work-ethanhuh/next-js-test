@@ -15,7 +15,7 @@ const Site = () => {
                             <span className="num">{history.yearmonth}</span>
                             <div className="text">
                                 <div>{history.text[0]}</div>
-                                <div><h4>{history.text[1]} / {history.text[2]}</h4></div>
+                                <div><h5>{history.text[1]} / {history.text[2]}</h5></div>
                             </div>
                             {history.title.map((title, idx) => (
                                 <div className="title" key={idx} >{title}</div>
