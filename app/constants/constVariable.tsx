@@ -85,10 +85,10 @@ export const historyText = [
         text: ["파낙토스", "S/W팀", "과장"],
         title: [
             "- Panaxtos Manager 블루투스 뇌파 수신 어플 개발",
-            "- C++ 관련 업무",
+            "- 사내 기존 C++ 관련 프로그램 유지보수 및 개발 업무",
         ],
         code: "",
-        view: "임금 체불로 인해 퇴사( 퇴사 2년만에 수령 )",
+        view: "임금 체불로 퇴사( 퇴사 2년만에 수령 )",
         info: [
             "Flutter",
             "Android",

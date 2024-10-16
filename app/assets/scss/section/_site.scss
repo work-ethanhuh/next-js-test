@@ -176,10 +176,10 @@
                 }
             }
             .btn {
-                a {
-                    text-decoration: underline;
+                span {
+                    font-weight: 700;
                     text-transform: uppercase;
-                    color: var(--black200);
+                    color: var(--red);
                     font-size: 1rem;
                     transition: all 0.3s;
                     margin: 0 2px;
