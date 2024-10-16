@@ -7,7 +7,7 @@ const Site = () => {
         <section id="site">
             <div className="site__inner">
                 <h2 className="site__title">
-                    History <em>이력</em>
+                    History <em>이력 - 학력제외 약 10년</em>
                 </h2>
                 <div className="site__wrap">
                     {historyText.map((history, key) => (
@@ -18,8 +18,8 @@ const Site = () => {
                                 <div><h4>{history.text[1]} / {history.text[2]}</h4></div>
                             </div>
                             {history.title.map((title, idx) => (
-                                    <div className="title" key={idx} >{title}</div>
-                                ))}
+                                <div className="title" key={idx} >{title}</div>
+                            ))}
                             <div className="btn">
                                 {/* <a href={history.code}>code</a> */}
                                 <span>{history.view}</span>

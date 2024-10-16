@@ -42,11 +42,7 @@ export const historyText = [
         code: "",
         view: "임금 체불로 퇴사",
         info: [
-            "Flutter",
-            "Android",
-            "iOS",
-            "Windows",
-            "MacOS",
+            "Flutter - Android/iOS/Windows/MacOS",
             "Java Spring Boot",
             "Spring Data JDBC",
             "Rest api",
