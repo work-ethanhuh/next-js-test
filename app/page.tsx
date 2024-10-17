@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import History from "./components/History";
+import Summary from "./components/Summary";
 
 const Home = () => {
     const [currentPath, setPath] = useState('/');
@@ -14,8 +15,8 @@ const Home = () => {
 
     function pathOutter() {
         switch(currentPath) {
-            case 'career':
-                return <div><h1>career</h1></div>;
+            case 'summary':
+                return <Summary/>;
             case 'portfolio':
                 return <div><h1>portfolio</h1></div>;
             case '/':

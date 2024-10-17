@@ -1,15 +1,19 @@
+import kakaoQR from "../assets/img/kakao_qr.png";
+
+
+export const kakaoQr = kakaoQR;
 export const headerNavigation = [
     {
         title: "이력사항",
         url: "history"
     },
     {
-        title: "경력기술서",
-        url: "career"
-    },
-    {
         title: "포트폴리오",
         url: "portfolio"
+    },
+    {
+        title: "요약",
+        url: "summary"
     },
 ];
 
@@ -145,7 +149,9 @@ export const historyText = [
     {
         yearmonth: "2017.01 - 2017.03",
         text: ["보고넷", "프리랜서"],
-        title: ["- 수자원인력공사 : 하수도 누수 체크 솔루션 프로그램"],
+        title: [
+            "- 수자원인력공사 : 하수도 누수 체크 솔루션 프로그램"
+        ],
         code: "",
         view: "",
         info: [
@@ -186,15 +192,44 @@ export const historyText = [
             "C",
         ],
     },
+    {
+        yearmonth: "2010.03 - 2012.08",
+        text: ["숭실대학교", "석사", "졸업"],
+        title: [
+            "- 학점 : 3.6 / 4.5",
+            "- 지역 : 서울",
+            "- 졸업논문 : 동작 카메라를 이용한 새 무리 제어",
+        ],
+        code: "",
+        view: "",
+        info: [
+            "MFC",
+            "C++",
+        ],
+    },
+];
+
+export const summaryText = [
+    {
+        yearmonth: "키인즈 / 2024.05 - 현재",
+        title: "서비스개발팀 / 선임연구원",
+        desc: "나는 공간을 만드는 것을 좋아한다. 어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 그 한구석에 나만의 꿈을 설계하고, 개발을 하며 앞으로도 살고 싶다."
+    },
+    {
+        yearmonth: "키인즈 / 2024.05 - 현재",
+        title: "열심히 할수록 기회는 따른다.",
+        desc: "운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다."
+    },
+    {
+        yearmonth: "키인즈 / 2024.05 - 현재",
+        title: "나에게 정직하다.",
+        desc: "정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다."
+    }
 ];
 
 export const contactText = [
     {
-        link: "오픈채팅방링크쑤셔넣음",
-        title: "KAKAO : ethanhuh",
-    },
-    {
         link: "mailto:work.hethan@gmail.com",
-        title: "mail : work.hethan@gmail.com",
+        title: "Mail : work.hethan@gmail.com",
     },
 ];

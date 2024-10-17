@@ -2,7 +2,7 @@ import React from "react";
 
 import { historyText } from "../constants/constVariable";
 
-const Site = () => {
+const History = () => {
     return (
         <section id="site">
             <div className="site__inner">
@@ -15,7 +15,7 @@ const Site = () => {
                             <span className="num">{history.yearmonth}</span>
                             <div className="text">
                                 <div>{history.text[0]}</div>
-                                <div><h5>{history.text[1]} / {history.text[2]}</h5></div>
+                                <div><h5>{history.text[1]} {history.text.length == 2 ? '' : `/ ${history.text[2]}`}</h5></div>
                             </div>
                             {history.title.map((title, idx) => (
                                 <div className="title" key={idx} >{title}</div>
@@ -40,4 +40,4 @@ const Site = () => {
     )
 }
 
-export default Site;
+export default History;
