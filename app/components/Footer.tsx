@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { kakaoQr } from "../constants/constVariable";
+import { kakaoQr, footerText } from "../constants/constVariable";
 
 const Footer = () => {
     const kakaoLink = 'http://qr.kakao.com/talk/PfNAhJQuVGLdmRlb96tN7MvKodg-';
@@ -30,21 +30,36 @@ const Footer = () => {
     return (
         <footer id="footer" role="contentinfo">
             <div className="footer__inner">
-                <h2 className="footer__text">
+                {/* <h2 className="footer__text">
                     <div>By EthanHuh</div>
-                </h2>
+                </h2> */}
                 <div className="footer__info">
                     <div className="left">
                         <div className="title">
                             <a href={kakaoLink} target="_blank" rel="noopener noreferrer" onClick={handleClick}>Contact</a>
+                            
                         </div>
+                        <a href={kakaoLink} target="_blank" rel="noopener noreferrer" className="img" onClick={handleClick}>
+                            <Image src={kakaoQr} alt="카카오 QR" 
+                            width={600}
+                            height={740}
+                            layout="intrinsic" quality={100} />
+                        </a>
                     </div>
                     <div className="right">
-                    <a href={kakaoLink} target="_blank" rel="noopener noreferrer" className="img" onClick={handleClick}>
-                      <Image src={kakaoQr} alt="카카오 QR" layout="intrinsic" quality={100} />
-                    </a>
+                        <h3>Job Site</h3>
+                        <ul>
+                            {footerText.map((footer, key) => (
+                                <li key={key}>
+                                    <a href={footer.link} target="_blank" rel="noopener noreferrer">{footer.title}</a>
+                                    <em>{footer.desc}</em>
+                                </li>
+                            ))}
+                        </ul>
+                    
                     </div>
                 </div>
+                
                 <div className="footer__right">
                     &copy; 2024 EthanHuh
                 </div>

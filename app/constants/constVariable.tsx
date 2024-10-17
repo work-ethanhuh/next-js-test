@@ -1,6 +1,5 @@
 import kakaoQR from "../assets/img/kakao_qr.png";
 
-
 export const kakaoQr = kakaoQR;
 export const headerNavigation = [
     {
@@ -339,6 +338,20 @@ export const summaryText = [
             "- 졸업논문 : 동작 카메라를 이용한 새 무리 제어",
         ],
     },
+];
+
+export const footerText = [
+    {
+        title: "사람인",
+        desc: "이력서/경력기술서/포트폴리오 다운로드 가능합니다.",
+        link: "https://www.saramin.co.kr/",
+    },
+    {
+        title: "잡코리아",
+        desc: "이력서/경력기술서/포트폴리오 다운로드 가능합니다.",
+        link: "https://www.jobkorea.co.kr/",
+    },
+    
 ];
 
 export const contactText = [

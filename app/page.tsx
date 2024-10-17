@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import History from "./components/History";
 import Summary from "./components/Summary";
+import Portfolio from "./components/Portfolio";
 
 const Home = () => {
     const [currentPath, setPath] = useState('/');
@@ -18,7 +19,7 @@ const Home = () => {
             case 'summary':
                 return <Summary/>;
             case 'portfolio':
-                return <div><h1>portfolio</h1></div>;
+                return <Portfolio/>;
             case '/':
             default:
                 return <History/>;
