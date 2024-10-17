@@ -14,7 +14,9 @@ const Summary = () => {
                         <div key={key}>
                             <span>{summary.yearmonth}.</span>
                             <h3>{summary.title}</h3>
-                            <p>{summary.desc}</p>
+                            {summary.desc.map((desc, key) => (
+                                <p key={key}>{desc}</p>
+                            ))}
                         </div>
                     ))} 
                 </div>
