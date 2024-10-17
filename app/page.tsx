@@ -33,7 +33,7 @@ const Home = () => {
     return (
         <>  
             <Header onPathData={handlePath}/>
-            <div style={{ paddingTop: '80px' }}> {pathOutter()}                
+            <div style={{ paddingTop: '80px' }}> {pathOutter()}
             </div>
             <Contact />
             <Footer />

@@ -30,7 +30,9 @@ const Header: FC<Props> = ({ onPathData }) => {
             <div className="header__inner">
                 <div className="header__logo">
                     <h1>
-                        <span onClick={() => pathData('/')} style={{ cursor: 'pointer'}}>Resume<em>Powered By NextJS + GitActions + Ubuntu</em></span>
+                        <span onClick={() => pathData('/')} style={{ cursor: 'pointer'}}>
+                            Resume<em>Powered By NextJS + GitActions + Ubuntu Docker</em>
+                        </span>
                     </h1>
                 </div>
                 <nav 
