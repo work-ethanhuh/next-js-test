@@ -162,7 +162,7 @@ export const historyText = [
 export const summaryText = [
   {
     yearmonth: "키인즈 / 2024.05 - 현재",
-    title: "미디어개발팀 / 선임연구원",
+    title: "미디어 개발팀 / 선임연구원",
     desc: [
       "- LG U+ 화물잇고-차주앱 (Flutter - iOS/Android 앱) : 5월 ~ 9월",
       "- 미래엔 초코툰 관리자 웹 (NextJS - ReactJS 웹) : 10월 ~ 12월",
