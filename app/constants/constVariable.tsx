@@ -18,12 +18,11 @@ export const headerNavigation = [
 
 export const historyText = [
   {
-    yearmonth: "2024.05 - 현재",
-    text: ["키인즈", "미디어 개발팀", "선임연구원"],
+    yearmonth: "2024.05 - 2025.01",
+    text: ["키인즈", "프리랜서"],
     title: [
       "- LG U+ 화물잇고-차주앱 (Flutter - iOS/Android 앱) : 5월 ~ 9월",
-      "- 미래엔 초코툰 관리자 웹 (NextJS - ReactJS 웹) : 10월 ~ 12월",
-      "- LG U+ 모아티비 웹(NextJS - ReactJS 웹) : 12월 ~ 현재",
+      "- 미래엔 초코툰 관리자 웹 (NextJS - ReactJS 웹) : 10월 ~ 2025년 1월",
     ],
     code: "",
     view: "",
@@ -161,12 +160,11 @@ export const historyText = [
 
 export const summaryText = [
   {
-    yearmonth: "키인즈 / 2024.05 - 현재",
-    title: "미디어 개발팀 / 선임연구원",
+    yearmonth: "키인즈 / 2024.05 - 2025.01",
+    title: "프리랜서",
     desc: [
       "- LG U+ 화물잇고-차주앱 (Flutter - iOS/Android 앱) : 5월 ~ 9월",
-      "- 미래엔 초코툰 관리자 웹 (NextJS - ReactJS 웹) : 10월 ~ 12월",
-      "- LG U+ 모아티비 웹(NextJS - ReactJS 웹) : 12월 ~ 현재",
+      "- 미래엔 초코툰 관리자 웹 (NextJS - ReactJS 웹) : 10월 ~ 2025년 1월",
       "",
     ],
   },
