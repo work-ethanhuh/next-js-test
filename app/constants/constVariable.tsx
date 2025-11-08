@@ -18,6 +18,16 @@ export const headerNavigation = [
 
 export const historyText = [
   {
+    yearmonth: "2025.08 - 2025.10",
+    text: ["티파이브온라인", "프리랜서"],
+    title: [
+      "- 헥토이노베이션 날씨돌(날씨옷장) (Flutter - iOS/Android 앱) : 8월 ~ 10월",
+    ],
+    code: "",
+    view: "",
+    info: ["Flutter", "Android", "iOS"],
+  },
+  {
     yearmonth: "2024.05 - 2025.01",
     text: ["키인즈", "프리랜서"],
     title: [
@@ -159,6 +169,14 @@ export const historyText = [
 ];
 
 export const summaryText = [
+  {
+    yearmonth: "티파이브온라인 / 2025.08 - 2025.10",
+    title: "프리랜서",
+    desc: [
+      "- 헥토이노베이션 날씨돌(날씨옷장) (Flutter - iOS/Android 앱) : 8월 ~ 10월",
+      "",
+    ],
+  },
   {
     yearmonth: "키인즈 / 2024.05 - 2025.01",
     title: "프리랜서",
